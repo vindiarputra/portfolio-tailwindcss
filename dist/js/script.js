@@ -74,9 +74,11 @@ darkToggle.addEventListener("click", function () {
     html.classList.remove("dark");
     sun.classList.add("hidden");
     moon.classList.remove("hidden");
+    localStorage.theme = "light";
   } else {
     html.classList.add("dark");
     sun.classList.remove("hidden");
     moon.classList.add("hidden");
+    localStorage.theme = "dark";
   }
 });
