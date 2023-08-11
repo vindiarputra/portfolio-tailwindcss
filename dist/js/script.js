@@ -69,16 +69,29 @@ const sun = document.querySelector("#sun");
 const moon = document.querySelector("#moon");
 const html = document.querySelector("html");
 
+// Mengambil preferensi tema dari localStorage saat halaman dimuat
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme === "dark") {
+  html.classList.add("dark");
+  sun.classList.remove("hidden");
+  moon.classList.add("hidden");
+} else {
+  html.classList.remove("dark");
+  sun.classList.add("hidden");
+  moon.classList.remove("hidden");
+}
+
 darkToggle.addEventListener("click", function () {
   if (html.classList.contains("dark")) {
     html.classList.remove("dark");
     sun.classList.add("hidden");
     moon.classList.remove("hidden");
-    localStorage.theme = "light";
+    localStorage.setItem("theme", "light"); // Menggunakan setItem untuk menyimpan tema di localStorage
   } else {
     html.classList.add("dark");
     sun.classList.remove("hidden");
     moon.classList.add("hidden");
-    localStorage.theme = "dark";
+    localStorage.setItem("theme", "dark"); // Menggunakan setItem untuk menyimpan tema di localStorage
   }
 });
+
