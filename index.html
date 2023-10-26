@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Porfolio Tailwind</title>
     <link href="dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <style>
       /* * {
         border: 1px solid red;
@@ -18,7 +20,7 @@
       }
     </script>
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <!-- Header Menu -->
 
     <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
@@ -103,9 +105,9 @@
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:w-1/2">
-            <h1 class="text-base font-semibold text-primary md:text-2xl pb-2">Hello ,Saya <span class="block font-bold text-dark text-4xl pb-2 dark:text-white">Vindiar Johan Diputra</span></h1>
+            <h1 class="text-base font-semibold text-primary md:text-2xl pb-2 animate__animated animate__bounceInLeft">Hello ,Saya <span class="block font-bold text-dark text-4xl pb-2 dark:text-white">Vindiar Johan Diputra</span></h1>
 
-            <h2 class="font-medium text-slate-500 text-lg mb-5 md:text-2xl">College & <span class="text-dark dark:text-white">Web Designer</span></h2>
+            <h2 class="font-medium text-slate-500 text-lg mb-5 md:text-2xl animate__animated animate__bounceInLeft">College & <span class="text-dark dark:text-white">Web Designer</span></h2>
             <p class="font-medium text-slate-400 mb-10 leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate iure,</p>
 
             <a href="#" class="text-base bg-primary text-white rounded-full py-3 px-8 hover:shadow-lg hover:opacity-80 transition duration-400 ease-in-out">Hubungi Saya</a>
@@ -133,7 +135,7 @@
 
     <section id="about" class="pt-36 pb-32 bg-slate-300 dark:bg-dark">
       <div class="container flex flex-wrap mt-0 mb-60">
-        <div class="w-fuil px-4 mb-10 lg:w-1/2">
+        <div class="w-fuil px-4 mb-10 lg:w-1/2" data-aos="fade-right">
           <h4 class="text-primary font-semibold text-2xl mb-4">Tentang Saya</h4>
           <h2 class="font-bold text-dark text-3xl mb-3 dark:text-white">Belajar bareng</h2>
           <p class="font-medium text-base text-slate-500 dark:text-slate-300">
@@ -142,7 +144,7 @@
           </p>
         </div>
 
-        <div class="w-full px-4 lg:w-1/2">
+        <div class="w-full px-4 lg:w-1/2" data-aos="fade-left">
           <h3 class="font-bold text-dark text-3xl mb-4 dark:text-white">Mari Berteman</h3>
           <p class="font-medium text-base text-slate-500 mb-6 dark:text-slate-300">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, totam officia architecto numquam dignissimos at consectetur sint laborum obcaecati eos voluptates adipisci veniam explicabo suscipit aspernatur amet
@@ -197,7 +199,7 @@
     <section id="portfolio" class="pt-36 pb-16 bg-state-100 dark:bg-slate-700">
       <div class="container">
         <div class="w-full px-4">
-          <div class="max-w-xl mx-auto mb-16 text-center">
+          <div class="max-w-xl mx-auto mb-16 text-center" data-aos="zoom-in-up">
             <h4 class="mb-2 text-2xl font-semibold text-primary">Porfolio</h4>
             <h2 class="font-bold text-dark text-3xl mb-4 dark:text-white">Project Terbaru</h2>
             <p class="text-slate-800 dark:text-slate-300">
@@ -208,32 +210,32 @@
       </div>
       <!-- Portfolio -->
       <div class="w-full px-4 mb-6 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
-        <div class="mb-12 p-10 md:w-1/2 rounded-xl">
-          <a href="https://vindiarputra.github.io/weather-io" class="rounded-md shadow-md overflow-hidden transition duration-500 ease-in-out hover:bg-white hover:opacity-80">
-            <img src="dist/img/portfolio/Weather.png" alt="Weather" width="w-full" class="mx-auto" />
+        <div class="mb-12 p-10 md:w-1/2 rounded-xl" data-aos="zoom-in-up">
+          <a href="https://vindiarputra.github.io/vindiarputra.gihub.io/" class="rounded-md shadow-md overflow-hidden transition duration-500 ease-in-out hover:bg-white hover:opacity-80">
+            <img src="dist/img/portfolio/Gaming eCommerce.png" alt="Weather" width="w-full" class="mx-auto" />
           </a>
           <h3 class="font-semibold text-xl text-dark mt-5 dark:text-white">Weatherio Project</h3>
           <p class="text-base font-medium text-slate-600 dark:text-slate-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint numquam consectetur laboriosam.</p>
         </div>
-        <div class="mb-12 p-10 md:w-1/2 rounded-xl">
+        <div class="mb-12 p-10 md:w-1/2 rounded-xl" data-aos="zoom-in-up">
           <a href="https://vindiarputra.github.io/weather-io" class="rounded-md shadow-md overflow-hidden transition duration-500 ease-in-out hover:bg-white hover:opacity-80">
             <img src="dist/img/portfolio/Weather.png" alt="Weather" width="w-full" class="mx-auto" />
           </a>
-          <h3 class="font-semibold text-xl text-dark mt-5 dark:text-white">Weatherio Project</h3>
+          <h3 class="font-semibold text-xl text-dark mt-5 dark:text-white">Weatherio</h3>
           <p class="text-base font-medium text-slate-600 dark:text-slate-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint numquam consectetur laboriosam.</p>
         </div>
-        <div class="mb-12 p-10 md:w-1/2 rounded-xl">
-          <a href="https://vindiarputra.github.io/weather-io" class="rounded-md shadow-md overflow-hidden transition duration-500 ease-in-out hover:bg-white hover:opacity-80">
-            <img src="dist/img/portfolio/Weather.png" alt="Weather" width="w-full" class="mx-auto" />
+        <div class="mb-12 p-10 md:w-1/2 rounded-xl" data-aos="zoom-in-up">
+          <a href="https://vindiarputra.github.io/WeatherCard/" class="rounded-md shadow-md overflow-hidden transition duration-500 ease-in-out hover:bg-white hover:opacity-80">
+            <img src="dist/img/portfolio/WeatherCard.png" alt="Weather" width="w-full" class="mx-auto" />
           </a>
-          <h3 class="font-semibold text-xl text-dark mt-5 dark:text-white">Weatherio Project</h3>
+          <h3 class="font-semibold text-xl text-dark mt-5 dark:text-white">Weather Card</h3>
           <p class="text-base font-medium text-slate-600 dark:text-slate-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint numquam consectetur laboriosam.</p>
         </div>
-        <div class="mb-12 p-10 md:w-1/2 rounded-xl">
-          <a href="https://vindiarputra.github.io/weather-io" class="rounded-md shadow-md overflow-hidden transition duration-500 ease-in-out hover:bg-white hover:opacity-80">
-            <img src="dist/img/portfolio/Weather.png" alt="Weather" width="w-full" class="mx-auto" />
+        <div class="mb-12 p-10 md:w-1/2 rounded-xl" data-aos="zoom-in-up">
+          <a href="https://vindiarputra.github.io/kedaiKopi/" class="rounded-md shadow-md overflow-hidden transition duration-500 ease-in-out hover:bg-white hover:opacity-80">
+            <img src="dist/img/portfolio/CoffeShop.png" alt="Weather" width="w-full" class="mx-auto" />
           </a>
-          <h3 class="font-semibold text-xl text-dark mt-5 dark:text-white">Weatherio Project</h3>
+          <h3 class="font-semibold text-xl text-dark mt-5 dark:text-white">Web Coffe Shop</h3>
           <p class="text-base font-medium text-slate-600 dark:text-slate-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint numquam consectetur laboriosam.</p>
         </div>
       </div>
@@ -241,7 +243,7 @@
 
     <!-- section client -->
     <section id="clients" class="pt-36 pb-32 bg-slate-800 dark:bg-slate-300">
-      <div class="container">
+      <div class="container" data-aos="zoom-in">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto mb-16 text-center">
             <h4 class="mb-2 text-2xl font-semibold text-primary">Clients</h4>
@@ -274,7 +276,7 @@
 
     <!-- section blog -->
     <section id="blog" class="pt-36 pb-32 dark:bg-dark">
-      <div class="container">
+      <div class="container" data-aos="zoom-in">
         <div class="max-w-xl mx-auto mb-16 text-center">
           <h4 class="mb-2 text-2xl font-semibold text-primary">Blog</h4>
           <h2 class="font-bold text-dark text-3xl mb-4 dark:text-white">Tulisan Terkini</h2>
@@ -286,7 +288,7 @@
 
       <!-- blog -->
       <div class="flex flex-wrap px-10 py-8 justify-center dark:bg-dark">
-        <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3" data-aos="zoom-in-up">
           <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
             <img src="https://source.unsplash.com/360x200?programming" alt="" class="w-full" />
             <div class="py-8 px-6 dark:bg-slate-800">
@@ -301,7 +303,7 @@
             </div>
           </div>
         </div>
-        <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3" data-aos="zoom-in-up">
           <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
             <img src="https://source.unsplash.com/360x200?programming" alt="" class="w-full" />
             <div class="py-8 px-6 dark:bg-slate-800">
@@ -316,7 +318,7 @@
             </div>
           </div>
         </div>
-        <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3" data-aos="zoom-in-up">
           <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
             <img src="https://source.unsplash.com/360x200?programming" alt="" class="w-full" />
             <div class="py-8 px-6 dark:bg-slate-800">
@@ -336,7 +338,7 @@
 
     <!-- Section contact -->
     <section id="contact" class="pt-36 pb-32 dark:bg-slate-700">
-      <div class="container">
+      <div class="container" data-aos="zoom-in">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto mb-16 text-center">
             <h4 class="mb-2 text-2xl font-semibold text-primary">Contact</h4>
@@ -351,7 +353,7 @@
       <!-- contact -->
 
       <form>
-        <div class="w-full lg:w-2/3 xl:w-2/4 mx-auto">
+        <div class="w-full lg:w-2/3 xl:w-2/4 mx-auto" data-aos="zoom-in">
           <div class="w-full px-4 m-8 mx-auto">
             <label for="name" class="text-base font-bold text-primary">Nama</label>
             <input type="text" id="name" class="w-full text-dark bg-slate-200 font-semibold p-2 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" />
@@ -375,14 +377,14 @@
     <footer class="bg-dark pt-24 pb-12">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="mb-12 w-full px-4 font-medium text-slate-300 md:w-1/3">
+          <div class="mb-12 w-full px-4 font-medium text-slate-300 md:w-1/3" data-aos="fade-right">
             <h2 class="mb-5 text-4xl font-bold text-white">WPX</h2>
             <h3 class="mb-2 text-2xl font-bold">Hubungi Kami</h3>
             <p>vindiari5c@gmail.com</p>
             <p>Jl. Dr. Setiabudhi No. 193</p>
             <p>Bandung</p>
           </div>
-          <div class="mb-12 w-full px-4 md:w-1/3">
+          <div class="mb-12 w-full px-4 md:w-1/3" data-aos="fade-right">
             <h3 class="mb-5 text-xl font-semibold text-white">Kategori Tulisan</h3>
             <ul class="text-slate-300">
               <li>
@@ -396,7 +398,7 @@
               </li>
             </ul>
           </div>
-          <div class="mb-12 w-full px-4 md:w-1/3">
+          <div class="mb-12 w-full px-4 md:w-1/3" data-aos="fade-right">
             <h3 class="mb-5 text-xl font-semibold text-white">Tautan</h3>
             <ul class="text-slate-300">
               <li>
@@ -494,5 +496,10 @@
     </a>
 
     <script src="dist/js/script.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
